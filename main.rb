@@ -10,7 +10,7 @@ def set_env_variables(keys,value)
     }
 end
 
-env_keys = get_env_variable("AC_ENV_KEYS") || abort('Missing Environtment Variable Keys')
+env_keys = get_env_variable("AC_ENV_KEYS") || abort('Missing Environment Variable Keys')
 env_value = get_env_variable("AC_ENV_VALUE") || ''
 keys_array = env_keys.split(" ")
 set_env_variables(keys_array,env_value)
