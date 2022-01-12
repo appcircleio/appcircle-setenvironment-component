@@ -2,11 +2,11 @@ platform: Common
 buildPlatform:
 displayName: Set Environment Variable
 inputs:
-- key: "AC_ENV_KEYS"
+- key: "AC_SETENV_KEYS"
   isRequired: true
   title: Environment Variable Key(s)
   description: Space-separated list of environment variable keys
-- key: "AC_ENV_VALUE"
+- key: "AC_SETENV_VALUE"
   isRequired: false
   title: Environment Variable Value
   description: Specifies environment variable value to set
