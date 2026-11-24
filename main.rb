@@ -10,7 +10,11 @@ def set_env_variables(keys,value)
     }
 end
 
+if __FILE__ == $PROGRAM_NAME
+
 env_keys = get_env_variable("AC_SETENV_KEYS") || abort('Missing Environment Variable Keys')
 env_value = get_env_variable("AC_SETENV_VALUE") || ''
 keys_array = env_keys.split(" ")
 set_env_variables(keys_array,env_value)
+
+end # if __FILE__ == $PROGRAM_NAME
